@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>AriasAntony</title>
+    <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
+    <link href="https://use.typekit.net/dim1aiz.css" rel="stylesheet">
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div>
+        {% block content%}
+        {% endblock %}
+    </div>
+
+</body>
+</html>

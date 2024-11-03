@@ -1,0 +1,101 @@
+:root{
+    --background-color: #06070E;
+    --primary-color: #467599;
+    --secondary-color: #9ED8DB;
+    --font-color: #E9FFF9;
+    --alert-color: #D64045;
+}
+
+body{
+    font-family: nunito, sans-serif;
+    background-color: var(--background-color);
+    padding: 0 20%;
+    color: var(--font-color);
+}
+
+.title{
+    margin-top: 25%;
+    width: 100%;
+}
+
+.title h1 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    font-family: noto-sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 64px;
+    margin: 0;
+}
+
+.title h1::before {
+    content: attr(data-text);
+    position: absolute;
+    visibility: hidden;
+}
+
+.title h1 span {
+    text-align: center;
+}
+
+.content {
+    margin: 5% 2%;
+}
+
+.subtitle{
+    font-family: noto-sans, sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    display: flex;
+    width: 100%;
+}
+
+.sub-box {
+    display: inline-flex;
+    width: 34%;
+}
+
+.sub-box span {
+    margin: auto;
+    text-align: center;
+}
+
+.button-box {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.button-box a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.btn-item {
+    display: inline-flex;
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid var(--font-color);
+    border-radius: 15px;
+    transition: all 0.7s ease;
+}
+
+.btn-item:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-item span {
+    margin: auto;
+    font-size: 18px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer div {
+    padding: auto;
+}

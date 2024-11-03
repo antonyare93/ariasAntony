@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="title">
+    <h1 data-text="Arias Antony">
+        {% for letter in "Arias Antony" %}
+            <span>{{ letter }}</span>
+        {% endfor %}
+    </h1>
+</div>
+<div class="content">
+    <div class="subtitle">
+        {% for subtitle in ["Web developer", "Backend", "Frontend"] %}
+        <div class="sub-box">
+            <span>{{ subtitle }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="button-box">
+        {% for topic in ["Portfolio", "Projects", "Python lessons"] %}
+        <a href="#">
+            <div class="btn-item">
+                <span>{{ topic }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+<footer>
+    <div><span>Designed and created by Arias Antony™. © 2024 Arias Antony</span></div>
+</footer>
+{% endblock %}
